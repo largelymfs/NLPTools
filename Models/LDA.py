@@ -91,6 +91,14 @@ class LDATassign():
             return 0
         return self.topic[topic]
 
+    def get_word_set(self):
+        #get the word set of LDA Model
+        return self.word.keys()
+
+    def get_topic_set(self):
+        #get the topic set of LDA Model
+        return self.topic.keys()
+
     #get the probability
     def prob_w_z(self, word, topic):
         #get the probability of p(w|z)
